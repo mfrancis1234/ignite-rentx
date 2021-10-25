@@ -22,13 +22,13 @@ export function Splash() {
 
   const brandStyle = useAnimatedStyle(() => {
     return {
-      opacity: interpolate(splashAnimation.value, [0, 700], [1, 0]),
+      opacity: interpolate(splashAnimation.value, [0, 50], [1, 0]),
       transform: [
         {
           translateX: interpolate(
             splashAnimation.value,
-            [0, 700],
-            [0, -700],
+            [0, 50],
+            [0, -50],
             Extrapolate.CLAMP
           ),
         },
